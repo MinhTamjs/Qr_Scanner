@@ -2,10 +2,11 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
-    <View >
+    <View>
       <TouchableOpacity
         onPress={() => navigation.navigate('Scanner')} // Navigate to Scanner
       >
@@ -16,6 +17,7 @@ const HomeScreen = () => {
       >
         <Text>Calendar</Text>
       </TouchableOpacity>
+      
     </View>
   );
 };

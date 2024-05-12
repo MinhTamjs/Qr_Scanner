@@ -2,30 +2,25 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import HomeScreen from '../Screens/HomeScreen';
-import QRScannerScreen from '../Screens/QRScannerScreen';
-import CalendarScreen from '../Screens/CalendarScreen';
+import BottomTabNavigation from './BottomTabNavigation';
+import LoginScreen from '../Screens/LoginScreen';
+import DrawerNavigation from './DrawerNavigation';
 
 const Stack = createNativeStackNavigator();
 
 const ScreenNavigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
+      <Stack.Navigator initialRouteName='Login'>
       <Stack.Screen
           name="Home"
-          options={{ headerShown: true }}
-          component={HomeScreen}
+          options={{ headerShown: false }}
+          component={DrawerNavigation}
         />
         <Stack.Screen
-          name="Scanner"
-          options={{ headerShown: true }}
-          component={QRScannerScreen}
-        />
-        <Stack.Screen
-          name="Calendar"
-          options={{ headerShown: true }}
-          component={CalendarScreen}
+          name="Login"
+          options={{ headerShown: false }}
+          component={LoginScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
