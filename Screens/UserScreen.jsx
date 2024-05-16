@@ -17,7 +17,7 @@ import {
 import auth from '@react-native-firebase/auth';
 GoogleSignin.configure({
   webClientId:
-    '1068309508233-a25qd214ki649rim8u86sjogmo0eaga9.apps.googleusercontent.com',
+    '371335822133-eng8j2p5er6tpc88lvhusc8rmr5482qp.apps.googleusercontent.com',
 });
 
 async function googleSignOut() {

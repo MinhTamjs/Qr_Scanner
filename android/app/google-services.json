@@ -1,20 +1,28 @@
 {
   "project_info": {
-    "project_number": "1068309508233",
-    "project_id": "techstoreapp-reactnative",
-    "storage_bucket": "techstoreapp-reactnative.appspot.com"
+    "project_number": "371335822133",
+    "project_id": "signin-test-a28d3",
+    "storage_bucket": "signin-test-a28d3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1068309508233:android:7b3f5e7edeb9fe6ceb9658",
+        "mobilesdk_app_id": "1:371335822133:android:c540a2125e997847bb6a7c",
         "android_client_info": {
           "package_name": "com.qr_scanner_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1068309508233-iodme1v98uh28955jrtrj0d7902v1qh1.apps.googleusercontent.com",
+          "client_id": "371335822133-q435osqlj5mkm8st6ujibolapta94av9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qr_scanner_app",
+            "certificate_hash": "556a9b8f51a04710d7d51f333270c64900fdc533"
+          }
+        },
+        {
+          "client_id": "371335822133-qgb61bcbovge5m0j0cr5pe4kl970lvt3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.qr_scanner_app",
@@ -22,20 +30,20 @@
           }
         },
         {
-          "client_id": "1068309508233-a25qd214ki649rim8u86sjogmo0eaga9.apps.googleusercontent.com",
+          "client_id": "371335822133-eng8j2p5er6tpc88lvhusc8rmr5482qp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBuTq_54oWX4i_e0fo2mpsLPKFnYOgGHXo"
+          "current_key": "AIzaSyDyCoT0PyMF-b5iMBnRjV7D1_wX4-gZVME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1068309508233-a25qd214ki649rim8u86sjogmo0eaga9.apps.googleusercontent.com",
+              "client_id": "371335822133-eng8j2p5er6tpc88lvhusc8rmr5482qp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
