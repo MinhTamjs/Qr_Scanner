@@ -38,13 +38,13 @@ const UserScreen = () => {
           <StatusBar />
           <View style={{width: '100'}}>
             <Image
-              source={require('./../assets/images/users/space.jpg')}
+              source={require('./../../assets/images/users/space.jpg')}
               style={styles.cover}
             />
           </View>
           <View style={styles.profileContainer}>
             <Image
-              source={require('./../assets/images/users/userDefault.png')}
+              source={require('./../../assets/images/users/userDefault.png')}
               style={styles.profile}
             />
             <Text style={styles.name}> Minh Tam </Text>

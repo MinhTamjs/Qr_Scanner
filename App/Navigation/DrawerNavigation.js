@@ -4,6 +4,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import DrawerScreen1 from "../Screens/DrawerScreen1";
 import DrawerScreen2 from "../Screens/DrawerScreen2";
 import DrawerScreen3 from "../Screens/DrawerScreen3";
+import QRCodeScannerScreen from "../Screens/QRScannerScreen";
 import BottomTabNavigation from "./BottomTabNavigation";
 
 
@@ -48,9 +49,9 @@ export default function DrawerNavigation() {
           headerShown: true,
           headerStyle: { height: 50 },
           headerTitle: "",
-          drawerLabel: "PC Văn phòng",
+          drawerLabel: "Scanner",
         }}
-        component={DrawerScreen1}
+        component={QRCodeScannerScreen}
       />
       <Drawer.Screen
         name="Drawer 2"
@@ -58,7 +59,7 @@ export default function DrawerNavigation() {
           headerShown: false,
           headerStyle: { height: 50 },
           headerTitle: "",
-          drawerLabel: "PC Gaming",
+          drawerLabel: "Drawer 2",
         }}
         component={DrawerScreen2}
       />
@@ -68,7 +69,7 @@ export default function DrawerNavigation() {
           headerShown: false,
           headerStyle: { height: 50 },
           headerTitle: "",
-          drawerLabel: "Laptop",
+          drawerLabel: "Drawer 3",
         }}
         component={DrawerScreen3}
       />

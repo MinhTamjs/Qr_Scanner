@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BottomTabNavigation from './BottomTabNavigation';
 import LoginScreen from '../Screens/LoginScreen';
 import DrawerNavigation from './DrawerNavigation';
+import QuizScreen from '../Screens/QuizScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,11 @@ const ScreenNavigation = () => {
           name="Login"
           options={{ headerShown: false }}
           component={LoginScreen}
+        />
+        <Stack.Screen
+          name="QuizScreen"
+          options={{ headerShown: false }}
+          component={QuizScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

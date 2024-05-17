@@ -5,6 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import QRCodeScannerScreen from "../Screens/QRScannerScreen";
 import CalendarScreen from "../Screens/CalendarScreen";
 import UserScreen from "../Screens/UserScreen";
+import HomeScreen from "../Screens/HomeScreen";
 
 
 export default function BottomTabNavigation() {
@@ -15,7 +16,7 @@ export default function BottomTabNavigation() {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
-      initialRouteName="UserTab"
+      initialRouteName="HomeScreen"
       screenOptions={{
         tabBarActiveTintColor: "#F9BC19",
         tabBarInactiveTintColor: "#FFFFFF",
@@ -38,11 +39,11 @@ export default function BottomTabNavigation() {
       }}
     >
       <Tab.Screen
-        name="ScannerTab"
-        component={QRCodeScannerScreen}
+        name="HomeScreen"
+        component={HomeScreen}
         options={{
           headerShown: false,
-          tabBarLabel: "Scanner",
+          tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
