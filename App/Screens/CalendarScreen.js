@@ -43,7 +43,7 @@ const CalendarScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Month Year Picker Example</Text>
+      <Text>Month Year Picker</Text>
       <Text>{moment(date).format(DEFAULT_OUTPUT_FORMAT)}</Text>
       <TouchableOpacity onPress={() => showPicker(true)} style={styles.button}>
         <Text style={styles.buttonText}>OPEN</Text>

@@ -2,15 +2,19 @@ import {View, Text, TouchableOpacity, StyleSheet, FlatList} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import quizData from '../Data/Quiz';
+import DrawerScreenWrapper from '../Navigation/DrawerScreenWrapper';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
   const renderItem = ({item}) => (
-    <TouchableOpacity onPress={() => navigation.navigate("QuizScreen", {item})}>
-      <View style={styles.item}>
-        <Text>{item.title}</Text>
-      </View>
-    </TouchableOpacity>
+    <DrawerScreenWrapper>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('QuizScreen', {item})}>
+        <View style={styles.item}>
+          <Text>{item.title}</Text>
+        </View>
+      </TouchableOpacity>
+    </DrawerScreenWrapper>
   );
 
   return (
@@ -32,9 +36,11 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
   item: {
-    backgroundColor: '#f9c2ff',
+    backgroundColor: '#FEFEF4',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
+    borderRadius: 10,
+    elevation: 1,
   },
 });

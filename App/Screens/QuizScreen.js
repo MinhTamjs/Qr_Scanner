@@ -67,15 +67,7 @@ const QuizScreen = () => {
         }}
         cardIndex={0}
         backgroundColor={'#4FD0E9'}
-        stackSize={3}>
-        <Button
-          onPress={() => {
-            console.log('Button pressed');
-          }}
-          title="Press me">
-          You can press me
-        </Button>
-      </Swiper>
+        stackSize={3}></Swiper>
     </View>
   );
 };
